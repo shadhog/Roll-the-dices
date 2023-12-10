@@ -1,0 +1,590 @@
+/* Reset CSS */
+
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* \Reset CSS */
+
+
+/* Initial */
+
+body {
+  background-color: #000000;
+  font-family: sans-serif;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+strong {
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 45px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.goDown {
+  z-index: 100;
+  display: block;
+  text-align: center;
+  font-size: 400%;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: goDown;
+  -webkit-animation-duration: 1s;
+  animation-name: goDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.goDown a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+@-webkit-keyframes goDown {
+  0% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+  }
+}
+
+.button {
+  font-size: 220%;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 auto;
+  vertical-align: middle;
+  padding: 14px;
+  box-sizing: border-box;
+  border: 0 none;
+  cursor: pointer;
+  outline: 0;
+  min-width: 220px;
+  text-align: center;
+  overflow: hidden;
+  font-weight: 400;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 3;
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+.button:hover {
+  background-color: #333333;
+  border-color: transparent;
+}
+
+.button.border {
+  color: #000000;
+}
+
+.button.red {
+  background-color: #c81f1f;
+  border-color: #c81f1f;
+}
+
+.button.red.border {
+  color: #c81f1f;
+}
+
+.button.red:hover {
+  background-color: #e76666;
+  border-color: transparent;
+}
+
+.button.aqua {
+  background-color: #1ec3e1;
+  border-color: #1ec3e1;
+}
+
+.button.aqua.border {
+  color: #1ec3e1;
+}
+
+.button.aqua:hover {
+  background-color: #78dbed;
+  border-color: transparent;
+}
+
+.button.white {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #000000;
+}
+
+.button.white.border {
+  color: #ffffff;
+}
+
+.button.white:hover {
+  background-color: #cccccc;
+  border-color: transparent;
+}
+
+.button.border {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.button.border:hover {
+  background-color: transparent;
+}
+
+.button.small {
+  font-size: 160%;
+  padding: 12px;
+  min-width: 150px;
+}
+
+#backtotop {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+#backtotop .fa {
+  font-size: 45px;
+  color: #c81f1f;
+  padding: 10px;
+}
+
+.relative {
+	position: relative;
+}
+
+/* /Initial */
+
+/* Main CSS */
+
+.allwrap {
+	padding-top: 50px;
+}
+
+.order {
+	display: inline-block;
+	vertical-align: middle;
+	width: 60%;
+}
+
+.order p {
+    font-size: 14px;
+    padding: 5px 0;
+    font-style: italic;
+    color: #a2bd88;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+	
+	-webkit-animation: change-font-weight 5s infinite;
+    animation: change-font-weight 5s infinite;
+	
+}
+
+.order p.tab-one {
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;
+}
+.order p.tab-two {
+	-webkit-animation-delay: 1.2s;
+	animation-delay: 1.2s;
+}
+.order p.tab-three {
+	-webkit-animation-delay: 1.8s;
+	animation-delay: 1.8s;
+}
+
+@-webkit-keyframes change-font-weight {
+    0%   {font-weight: normal;}
+    10%  {font-weight: bold;}
+    20%  {font-weight: normal;}
+}
+
+@keyframes change-font-weight {
+    0%   {font-weight: normal;}
+    10%  {font-weight: bold;}
+    20%  {font-weight: normal;}
+}
+
+.order p strong {
+	color: #7cf700;
+}
+
+.area-top-left {
+	display: inline-block;
+	vertical-align: middle;
+	width: 40%;
+	margin-right: -4px;
+}
+
+#player {
+	position: absolute;
+	left: -100px;
+	top: 0;
+	z-index: 1;
+	width: 80px;
+	padding: 25px 0 0 20px;
+	-webkit-transition: all 1000ms ease-in-out;
+	-moz-transition: all 1000ms ease-in-out;
+	-ms-transition: all 1000ms ease-in-out;
+	-o-transition: all 1000ms ease-in-out;
+	transition: all 1000ms ease-in-out;
+}
+
+#dice {
+	position: absolute;
+	z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	width:100%;
+}
+
+.title {
+	font-size: 22px;
+	color: #a1a1a1;
+	padding-bottom: 20px;
+}
+
+.prizes-title {
+	font-size: 20px;
+    padding: 20px 0;
+}
+
+#whatleft {
+	font-weight: bold;
+}
+/*
+#dices {
+	display: inline-block;
+    font-size: 20px;
+    padding-left: 20px;
+    vertical-align: middle;
+}
+
+#dices img {
+	width: 30px;
+	height: 30px;
+}
+*/
+/*.area-top {
+	padding-bottom: 20px;
+}*/
+
+.table {
+    padding-bottom: 20px;
+}
+
+#rollthedices {
+	font-size: 20px;
+	color: #ffffff;
+	display: inline-block;
+	vertical-align: middle;
+	background: #0080ff;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-weight: bold;
+	text-transform: uppercase;
+}
+
+/*#rollthedices.inactive {
+	background-color: #7d96af; 
+	cursor: default;
+}*/
+
+#board {
+	background-image: url('../images/shapes.png');
+	background-size: 6%;
+	background-position: center center;
+	/*background-repeat: no-repeat;*/
+}
+
+#board li {
+	border: 1px solid #0b3103;
+    display: inline-block;
+	color: #23bd03;
+	background-color: rgba(19, 72, 8, 0.982);
+	font-size: 20px;
+    padding: 10px;
+    width: 10%;
+    height: 120px;
+    vertical-align: middle;
+    line-height: normal;
+    text-align: center;
+	box-sizing: border-box;
+	-webkit-transition: background 0.6s ease-in-out;
+	-moz-transition: background 0.6s ease-in-out;
+	-ms-transition: background 0.6s ease-in-out;
+	-o-transition: background 0.6s ease-in-out;
+	transition: background 0.6s ease-in-out;
+}
+
+#board li:hover {
+	background-color: #184c0d;
+	-webkit-transition: background 0.05s ease-in-out;
+	-moz-transition: background 0.05s ease-in-out;
+	-ms-transition: background 0.05s ease-in-out;
+	-o-transition: background 0.05s ease-in-out;
+	transition: background 0.05s ease-in-out;
+}
+
+#board li.gotBlock {
+	background-color: #124607;
+}
+
+#board li.price.gotBlock {
+	background-color: #fa6200;
+}
+
+#board li.price.gotBlock span {
+	color: #ffffff;
+}
+
+#board li.gotBlock span {
+	font-weight: 900;
+}
+
+#board li p.onBlock {
+	color: #7cf700;
+	font-weight: bold;
+}
+
+#board li.price p.onBlock {
+    color: #ffffff;
+}
+
+#board li p.overBlock {
+	color: #f1f1f1;
+	font-weight: bold;
+}
+
+#prizes {
+	min-height: 100px;
+}
+
+#board li span,
+#prizes li  {
+	font-size: 12px;
+	color: #fa6200;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+
+#prizes li.last-roll  {
+	color: #7d96af;
+}
+
+#board.win li {
+	background-color: #380000;
+}
+
+.ui-draggable-dragging {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.bottom {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+
+.bottom.left {
+	margin-right: -4px;
+}
+
+.bottom.right {
+	text-align: right;
+	padding-top: 10px;
+}
+
+.bottom.right a {
+	display: block;
+	padding: 3px 0;
+	font-size: 14px;
+}
+
+/* /Main CSS */
+
+/* Responsice */
+
+@media screen and (max-width: 1300px) {
+	.allwrap {
+		padding-top: 25px;
+	}
+	.container {
+		padding: 0 25px;
+		max-width: 767px;
+	}
+	.title {
+		font-size: 20px;
+	}
+	#board li {
+		height: 72px;
+		font-size: 14px;
+	}
+	#board li span,
+	#prizes li {
+		font-size: 10px;
+	}
+	#player {
+		width: 50px;
+		padding: 13px 0 0 12px;
+		left: -60px;
+	}
+	.order {
+		width: 56%;
+	}
+	.area-top-left {
+		width: 44%;
+	}
+	.table {
+		padding-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.allwrap {
+		padding-top: 10px;
+	}
+	.container {
+		padding: 0 15px;
+	}
+	.title {
+		font-size: 16px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#board {
+	    background-size: 15%;
+	}
+	#board li {
+		width: 20%;
+		height: 40px;
+		position: relative;
+		padding: 1px 10px;
+		background-color: rgba(19, 72, 8, 0.978);
+	}
+	#board li p {
+	    padding: 10px 0;
+	}
+	#board li.price p {
+		display: none;
+	}
+	#player {
+	    width: 32px;
+		padding: 4px 0 0 13px;
+	}
+	.order {
+		display: table-header-group;
+		width: 100%;
+	}
+	.area-top-left {
+	    display: table-footer-group;
+		width: 100%;
+		text-align: center;
+	}
+	.order p {
+	    font-size: 11px;
+	}
+	.table {
+		display: table;
+		width: 100%;
+	}
+}

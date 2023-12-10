@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0"/>
+	
+	<!--<link rel="shortcut icon" href="images/favicon.ico">-->
+	<meta name="theme-color" content="#e3a3a3">
+
+	<title></title>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />	
+
+  </head>
+
+  <body>
+
+	
+	<div class="allwrap">
+		<div class="first" id="first">
+			<div class="container">
+				<div class="content">
+					<div class="table">
+						<div class="area-top-left">
+							<p class="title">You have <span id="whatleft"></span> dice rolls left</p>
+							<div class="area-top">
+								<a href="javascript:void(0);" onclick="rollDices();" id="rollthedices">Roll Dice</a>
+								<!--<div id="dices"></div>-->
+							</div>
+						</div>
+						<div class="order">
+							<p>1) Roll the dice</p>
+							<p class="tab-one">2) Advance on board</p>
+							<p class="tab-two">3) If landed on a price - <strong>YOU WIN!</strong></p>
+							<p class="tab-three">4) If you get to the end of the board - <strong>YOU WIN!</strong></p>
+						</div>
+					</div>
+					<div class="relative">
+						<ul id="board"></ul>
+						<img src="images/player.png" id="player" >
+						<div class="dices-wrap">
+							<div id="dice"></div>
+						</div>
+					</div>
+					<div class="bottom left">
+						<p class="prizes-title">My prizes:</p>
+						<ul id="prizes"></ul>
+					</div>
+					<div class="bottom right">
+						<a href="#" onclick="deposit(100);">Deposit 100$ - Get 2 more rolls</a>
+						<a href="#" onclick="deposit(200);">Deposit 200$ - Get 5 more rolls</a>
+						<a href="#" onclick="deposit(300);">Deposit 300$ - Get 8 more rolls</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+		
+	<script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.vibrate.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dice.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+  </body>
+</html>
